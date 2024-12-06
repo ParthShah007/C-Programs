@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+int a[10]={1,2,3,4,5},i,posi=3,w=7,n=5;
+clrscr();
+for(i=n;i>posi-1;i--){
+a[i]=a[i-1];
+}
+a[posi-1]=w;
+n++;
+printf("The new array is: ");
+for(i=0;i<n;i++){
+printf("%d ",a[i]);
+}
+getch();
+}

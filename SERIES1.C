@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+int n,i;
+float sum=0.00;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+sum+=1.0/i;
+}
+printf("The result of the series is %.2f.",sum);
+getch();
+}
+

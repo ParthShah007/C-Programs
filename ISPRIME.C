@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main() {
+    int n = 25, i;
+    int isPrime = 1; // Assume the number is prime
+    //clrscr();
+    
+    for(i = 2; i < n; i++) {
+        if(n % i == 0) {
+            isPrime = 0; // Found a divisor, not a prime number
+            break;
+        }
+    }
+
+    if(isPrime == 1) {
+        printf("Prime");
+    } else {
+        printf("It's not prime.");
+    }
+
+    getch();
+}
