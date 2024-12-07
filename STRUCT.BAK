@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+struct student {
+int rn;
+char name[100];
+float marks;
+};
+int main () {
+struct student s1={108,"Parth Shah",99.99};
+clrscr();
+printf("The student details are: \n");
+printf("%d\n%s\n%.2f",s1.rn,s1.name,s1.marks);
+getch();
+return 0;
+}
