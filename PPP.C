@@ -1,0 +1,58 @@
+#include<stdio.h>
+#include<conio.h>
+int main () {
+int a[100][100],b[100][100],m,n,p,q,j,k,i,c[100][100]={0};
+clrscr();
+printf("Enter the number of rows and columns for matrix a: ");
+scanf("%d %d",&m,&n);
+printf("Enter the number of rows and columns for matrix b: ");
+scanf("%d %d",&p,&q);
+if(n==p){
+printf("Enter the elements of matrix a: ");
+for(i=0;i<m;i++){
+	for(j=0;j<n;j++){
+	scanf("%d",&a[i][j]);
+	}
+}
+printf("Enter the elements of matrix b: ");
+for(i=0;i<q;i++){
+	for(j=0;j<p;j++){
+	scanf("%d",&b[j][i]);
+	}
+}
+printf("Matrix a: \n");
+for(i=0;i<m;i++){
+	for(j=0;j<n;j++){
+	printf("%d\t",a[i][j]);
+	}
+	printf("\n");
+}
+printf("Matrix b: \n");
+for(i=0;i<p;i++){
+	for(j=0;j<q;j++){
+	printf("%d\t",b[i][j]);
+	}
+}
+printf("Multiplication matrix c: ");
+for(i=0;i<m;i++){
+	for(j=0;j<q;j++){
+	c[i][j]=0;
+		for(k=0;k<n;k++){
+		c[i][j]+=a[i][k]*b[k][j];
+		}
+	}
+}
+printf("Matrix c: \n");
+for(i=0;i<m;i++){
+	for(j=0;j<q;j++){
+	printf("%d\t",c[i][j]);
+	}
+	printf("\n");
+}
+} else {
+printf("Multiplication not possible.");
+getch();
+return 0;
+}
+
+
