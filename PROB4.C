@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+int i=0,j=0,k,count[100],max,l=0;
+char a[100],res;
+clrscr();
+printf("Enter a string: ");
+scanf("%[^$]s",a);
+while(a[i]!='\0'){
+	i++;
+	l++;
+}
+for(i=0;i<l;i++){
+	count[i]=0;
+}
+for(i=0;i<l;i++){
+	for(j=i;j<l;j++){
+		if(a[i]==a[j]){
+			count[i]++;
+		}
+	}
+}
+max=count[0];
+for(j=1;j<l;j++){
+	if(count[j]>=max){
+		max=count[j];
+		res=a[j];
+	}
+}
+printf("The max occuring char is %c and %d times.",res,max);
+getch();
+}
