@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<ctype.h>
 int main () {
-char a[100],ch;
+char a[100];
 int i=0,j=0;
 clrscr();
 printf("Enter a string: ");
