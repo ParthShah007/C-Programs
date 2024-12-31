@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+float a=0.7;
+clrscr();
+printf("%f\n",a);
+if(a>=0.7f){
+printf("c");
+}
+else{
+printf("s");
+}
+getch();
+}
