@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+int a[100],*p,i=0,n;
+clrscr();
+p=a;
+printf("Enter the elements: ");
+for(i=0;i<5;i++){
+scanf("%d",&p[i]);
+}
+printf("Enter the darshan(target): ");
+scanf("%d",&n);
+for(i=0;i<5;i++){
+if(p[i]==n){
+printf("The darshan index is %d.",i);
+break;
+}
+}
+getch();
+}
