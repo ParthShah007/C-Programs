@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+int *p=10,a;
+clrscr();
+a=*p;
+printf("%d",a);
+
+
+getch();
+}

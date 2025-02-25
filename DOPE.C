@@ -2,17 +2,19 @@
 #include<conio.h>
 void main () {
 int i=0;
-char a[100],count[100]={0};
+int a[100],count[256]={0};
 clrscr();
 printf("Enter a string: ");
-scanf("%s",a);
-while(a[i]!='\0'){
+for(i=0;i<10;i++){
+scanf("%d",&a[i]);
+}
+while(i<10){
 count[a[i]]++;
 i++;
 }
-for(i=0;i<100;i++){
+for(i=0;i<150;i++){
 if(count[i]>0){
-printf("%c -> %d times\n",i,count[i]);
+printf("%d -> %d times\n",i,count[i]);
 }
 }
 getch();

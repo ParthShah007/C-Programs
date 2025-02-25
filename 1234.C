@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main () {
+char a[20];
+int i=0,l=0,j,count[100]={0};
+clrscr();
+printf("Enter name: ");
+scanf("%s",a);
+while(a[i]!='\0'){
+l++;
+i++;
+}
+
+for(i=0;i<l;i++){
+count[a[i]]++;
+}
+for(i=0;i<l;i++){
+printf("%c->%d times\n",a[i],count[a[i]]);
+}
+getch();
+}
